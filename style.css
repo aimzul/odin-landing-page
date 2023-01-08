@@ -16,15 +16,18 @@ body {
     color: var(--color-main-text);
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-button {
+#sign-up {
    background-color: var(--color-button);
    border-radius: 5px;
    color: var(--color-main-text);
+   border : none;
+   padding: 8px 16px;
 }
 
-.h1 {
+h1 {
     font-size: 48px;
     color: var(--color-main-text);
     font-weight: 800;
@@ -141,25 +144,50 @@ blockquote {
     font-style: italic;
     font-weight: lighter;
     text-align: justify;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
 }
 
 figcaption {
     color:#1F2937;
+    font-size: 24px;
     font-weight: bold;
     text-align: end;
 }
 
 .call-to-action {
+    display: flex;
     background-color: var(--color-button);
-    padding: 30px;
+    padding: 40px;
     border-radius: 5px;
+    margin: 0 15%;
+    flex:1 1 auto;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+
+}
+
+.title-cta {
+    font-weight: 800;
+    font-size: larger;
+}
+
+#button-cta {
+    background-color: var(--color-button);
+    border-radius: 5px;
+    color: var(--color-main-text);
+    padding: 8px 16px;
+    border-color: #fff;
+    border-radius: 5px;
+    font-weight: 800;
+    width: 100px;
 }
 
 .footer {
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px; 
-    margin:0;
+    padding: 10px 0px;
+    margin: 0;
+
 }
