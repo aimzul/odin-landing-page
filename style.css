@@ -1,0 +1,165 @@
+:root {
+    --color-primary: #1f2937;
+    --color-main-text: #F9FAF8;
+    --color-secondary-text: #E5E7EB;
+    --color-button: #3882F6;
+    --color-header: #1F2937;
+    --color-section-background:#E5E7EB;
+    --color-quote-text: #1F2937;
+}
+/* var(--color-primary) */
+
+body {
+    display:flex;
+    flex-direction: column;
+    overflow-wrap: break-word ;
+    color: var(--color-main-text);
+    padding: 0;
+    margin: 0;
+}
+
+button {
+   background-color: var(--color-button);
+   border-radius: 5px;
+   color: var(--color-main-text);
+}
+
+.h1 {
+    font-size: 48px;
+    color: var(--color-main-text);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight:  800;
+    color: var(--color-primary);
+}
+
+.content {
+    flex: 0 1 auto;
+}
+.header,
+.container-1,
+.footer { 
+    background-color: var(--color-primary);
+    display: flex;
+
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    margin: 0 12px;
+    font-size: 24px;
+    color: var(--color-main-text);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 18px;
+    color: var(--color-secondary-text)
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-main-text);
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4 {
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-1 {
+    padding-top: 0;
+}
+
+.container-1>img {
+    max-width: 300px;
+    margin: 25px;
+}
+.container-2 {
+    color: var(--color-primary);
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 300px;
+    text-align: center;
+}
+
+.container-2>img {
+    border-radius: 15px;
+    height: 20px;
+    width: 20px;
+    border: var(--color-button)
+}
+
+.container-3 {
+    background-color: var(--color-secondary-text);
+    color: var(--color-quote-text);
+    padding: 80px;
+}
+
+figure {
+    margin: 0 12%;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+figcaption {
+    color:#1F2937;
+    font-weight: bold;
+    text-align: end;
+}
+
+.call-to-action {
+    background-color: var(--color-button);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    margin:0;
+}
